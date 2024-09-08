@@ -1,0 +1,247 @@
+@font-face { /*To use the custom font in Line 16*/
+    font-family: "Poppins";
+     src: url("/fonts/Poppins-Regular.ttf");
+}
+:root{
+    --main-gray: rgb(226, 228, 228);
+}
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: "Poppins";
+    list-style-type: none;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+
+button:hover , a:hover{
+    cursor: pointer;
+}
+.main-conatiner{
+    width: 100%;
+    min-height: 600px;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:var(--main-gray);
+   position: fixed;
+}
+header .logo{
+    width: 20%;
+    align-items: center;
+}
+header .header-navs{
+    width: 50%;
+}
+header .header-navs ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .header-navs ul li{
+    padding: 10px 13px;
+    text-align: center;
+    border-radius: 20px;
+}
+header .header-navs ul li:hover{
+    border: inset;
+    border: 1px solid black;
+    transition: .5s ease-out;
+}
+header .header-navs ul li input{
+    border: none;
+    outline: none;
+    padding:5px ;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+header .header-navs ul a{
+    color: rgb(66, 65, 65);
+}
+main{
+    width: 100%;
+    padding-top: 70px;
+}
+main .section-one{
+    width: 22%;
+    float: left;
+    height: 600px;
+    background-color: var(--main-gray);
+    padding: 10px;
+    position: fixed;
+}
+main .section-one .Profile-display{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+main .section-one ul{
+        width: 100%;
+}
+main .section-one ul li{
+    padding: 12px 40px;
+    margin: 4px 0px;
+    border-radius: 10px;
+}
+
+main .section-one ul li a{
+    margin: 4px 0px;
+    color: rgb(119, 108, 108);
+} 
+.icons img{
+    margin: 0 25px;
+    width: 27px;
+}
+.section-one ul li:hover{
+       background-color: rgba(79, 189, 79, 0.464);
+         color: white;
+        transition: 200ms ease;
+}
+
+.section-one ul li.highlight{
+    background-color: rgba(79, 189, 79, 0.464);
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+main .section-two{
+    width: 78%;
+    float: right;
+    background-color: var(--main-gray);
+    min-height: 600px;
+}
+
+.section-two .channel , .content-banner , .courses-card-holder{
+    width: 94%;
+    min-height: 100px;
+    border-radius: 20px;
+    margin: 10px auto;
+    background-color: white;
+    display: flex;
+}
+.section-two .channel .channel-info{
+    width: 40%;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+.channel-logo{
+    width: 22%;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.channel-logo img{
+    width: 100%;
+}
+.section-two .channel .channel-buttons{
+    width: 60%;
+    display: flex;
+    padding: 8px;
+    justify-content: flex-end;
+}
+.normal-but{
+        border: none;
+        margin: 20px 10px;
+        padding: 0px 30px;
+        font-size: 15px;
+        border-radius: 20px;
+}
+.section-two .channel .channel-buttons .Subscribe{
+    background-color: rgb(8, 92, 35);
+    color: white;
+}
+.section-two .channel .channel-buttons .Message{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.content-banner .content{
+    width: 55%;
+    padding: 50px 10px 20px 40px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.content-banner .content h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.content-banner .content p{
+    font-size: 13px;
+    margin: 10px 0px 10px 0px;
+}
+.content-banner .content  span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.content-banner .content-image{
+    margin:50px auto;
+    width: 45%;
+    text-align: center;
+}
+.content-banner .content-image img{
+    width: 80%;
+    margin: auto auto;
+}
+.small-button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px 8px;
+    background-color: rgb(246, 176, 199);
+    border: none;
+    border-radius: 10px;
+}
+.Buy{
+    margin: 10px 10px 0px 0px;
+    padding: 10px 20px;
+    background-color: rgb(8, 92, 35);
+    color: white;
+}
+.courses-card-holder{
+    padding: 10px;
+    background:none;
+    justify-content: space-between;
+}
+.course-card{
+    width: 23%;
+    display: flex;
+    flex-direction:column;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 15px;
+}
+.course-card-img{
+    width: 100%;
+}
+.course-img{
+    width: 100%;
+    max-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.course-card-content h1{
+    font-size:17px;
+    font-weight: 600;
+}
+.course-card-content{
+    padding: 10px;
+}
+.course-card-content p{
+    font-size: 11px;
+}
+.course-card-content h2{
+    display: inline;
+    font-size:18px;
+    color: rgb(1, 20, 1);
+}

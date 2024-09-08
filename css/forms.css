@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "TT-Hoves";
+    src: url("./resources/fonts/TT-Hoves-Regular.ttf");
+  }
+  
+  :root {
+    font-size: 16px;
+    --yellow-green: rgb(105, 153, 9);
+    --white: rgb(255, 255, 255);
+    --dark-green: rgb(9, 103, 18);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  /* sign up css */
+  .signup-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    border-radius: 2rem;
+    background: rgb(243, 247, 239);
+  }
+  .signup-form-box {
+    padding: 1rem;
+    width: 50%;
+  }
+  .signup-form-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--yellow-green);
+  }
+  .signup-form-header img,
+  .logo {
+    width: 20%;
+    border-radius: 5rem;
+  }
+  .signup-form-header h2 {
+    margin-left: 2rem;
+    font-size: 3rem;
+    width: 80%;
+  }
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    width: 90%;
+    height: 60vh;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    color: var(--yellow-green);
+  }
+  .signup-form p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .signup-form a {
+    color: darkgreen;
+  }
+  .form-input {
+    width: 60%;
+    margin: 0.5rem;
+    padding: 0.7rem;
+    outline: none;
+    border: 1px solid var(--yellow-green);
+    border-radius: 0.3rem;
+  }
+  input:focus {
+    background-color: rgb(225, 242, 219);
+    outline: none;
+    border: 1px solid var(--yellow-green);
+  }
+  .signup-form .inner-form {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: darkgreen;
+  }
+  .login-but {
+    font-size: 1rem;
+    background: none;
+    color: var(--yellow-green);
+    border: 0.1rem solid var(--yellow-green);
+    width: 60%;
+  }
+  .login-but:hover {
+    background-color: var(--yellow-green);
+    color: var(--white);
+  }
+  .signup-banner {
+    width: 50%;
+    background: url(/Images/signup-banner.jpg);
+    background-size: cover;
+  }
+  
+  
